@@ -10,7 +10,7 @@ layout: default
   </div>
 
   <div class="date">
-  تاريخ النشر  {{ page.date  }}  
+  تاريخ النشر  {{ page.date | | date: "%e/%f/%Y"   }}  
   </div>
 
   {% include disqus.html %}
